@@ -1,0 +1,25 @@
+<!-- <div class="row liftoff-card rounded">
+    <div class="col-4 w-100 h-100%">
+        <img class="float-start spacecraft-banner" src='' onerror="this.src='assets/spacecraft.png'">
+    </div>
+    <div class="col-8  p-4">
+        <h3>Falcon 9 Block 5 | Dragon CRS-2 SpX-22</h3>
+        <h6>China Aerospace Science and Technology Corporation</h6>
+        <h6>Launch Complex 2 (LC-2)</h6>
+        <h6>First cargo delivery mission to the Chinese large modular space station.</h6>
+        <h5>Jun 2, 2021</h5>
+    </div>
+</div> -->
+
+<div class="row liftoff-card rounded mt-4">
+        <div class="col-4 p-0">
+            <img class="float-start w-100 bannerSpace" [src]=data.image>
+        </div>
+        <div class="col-8 p-4">
+            <h3>{{data.name}}</h3>
+            <h6>{{data.launch_service_provider.name}}</h6>
+            <h6>{{data.pad.name}}</h6>
+            <h6>{{data.mission.description}}</h6>
+            <h5>{{data.net | date:'medium'}} </h5>
+        </div>
+</div>
